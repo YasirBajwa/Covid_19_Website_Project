@@ -1,0 +1,8 @@
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 65%;
+    margin-top: 7% !important;
+}

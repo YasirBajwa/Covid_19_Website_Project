@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(250, 250, 250);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.covid{
+    width:350px;
+    margin-top:40px;
+}
+
+@media(max-width:770px){
+.container{
+    margin: 0 12%;
+}
+.covid{
+    width:100%;
+}
+}

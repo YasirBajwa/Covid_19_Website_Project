@@ -1,0 +1,12 @@
+.container{
+   
+    display: flex;
+    flex-direction: row;
+}
+/* .barChartCase{
+    width: 500px !important;
+} */
+
+.piChartId{
+    width: 500px !important;
+}

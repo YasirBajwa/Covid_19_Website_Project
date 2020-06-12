@@ -1,0 +1,51 @@
+.container{
+    margin: 50px 0;
+}
+.card{
+    margin: 1% 2% !important;
+    width:200px;
+}
+
+.infected{
+    border-bottom: 10px solid rgba(0, 0, 255,0.5);
+}
+.confirmedCase{
+    color:rgba(0, 0, 255,0.5);
+    font-size: 20px !important;
+    font-weight: 300;
+}
+.recoverdCase{
+    color:rgba(0, 255, 0);
+    font-size: 20px !important;
+    font-weight: 300;
+}
+.deathCase{
+    color:rgba(255, 0, 0,0.5);
+    font-size: 20px !important;
+    font-weight: 300;
+}
+.recovered{
+    border-bottom: 10px solid rgba(0, 255, 0,0.5);
+}
+.deaths{
+    border-bottom: 10px solid rgba(255, 0, 0,0.5);
+
+}
+.updateGrid{
+    text-align: center !important;
+    margin-top: 20px !important;
+}
+.updateGrid {
+    
+}
+.updateTime{
+    font-size: 25px !important;
+    color:red;
+}
+
+@media(max-width:770px){
+    .card{
+        margin:2% 3% !important;
+
+    }
+}
