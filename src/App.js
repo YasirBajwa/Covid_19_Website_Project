@@ -40,7 +40,7 @@ state={
                 <CountryPicker handleCountryChange={this.handleCountryChange}/>
                 
                 <Cards data={data} />
-                <PiChart  data={data}/>
+                <PiChart  data={data} country={country}/>
                 <Chart data={data} country={country} />
                
             </div>

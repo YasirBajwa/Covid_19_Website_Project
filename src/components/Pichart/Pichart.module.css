@@ -2,11 +2,43 @@
    
     display: flex;
     flex-direction: row;
+    width: 80% !important;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-/* .barChartCase{
+.barChartCase{
     width: 500px !important;
-} */
+}
 
 .piChartId{
     width: 500px !important;
+    margin-top: 20px ;
 }
+@media(max-width:600px){
+    /* .barChartCase{
+        width: 100% !important;
+        height: 300px !important;
+    }
+    .piChartId{
+        width: 100% !important;
+        height: 300px !important;
+    } */
+    .piChartId{
+        margin-left: 140px;
+      }
+}
+@media(max-width:500px){
+    
+    .piChartId{
+      margin-left: 130px;
+    }
+    .barChartCase{
+        /* width:500em !important; */
+    }
+} 
+@media(max-width:400px){
+    
+    .piChartId{
+      margin-left: 70px;
+    }
+} 

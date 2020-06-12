@@ -7,7 +7,7 @@ import cx from 'classnames';
 
 
 const Cards = ({data : {confirmed,recovered,deaths,lastUpdate}}) =>{
-  if(!confirmed){
+      if(!confirmed){
       return 'Loading'
   }
   let recoverdCase= recovered.value ;

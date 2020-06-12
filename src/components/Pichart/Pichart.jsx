@@ -1,18 +1,29 @@
 
 
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import {Pie, Bar} from 'react-chartjs-2';
 import styles from './Pichart.module.css'
-// import {fetchDailyData} from '../../api';
+import {fetchDailyData} from '../../api';
 
 
 
-const PiChart = ({data:{confirmed,recovered,deaths},country}) =>{
+const PiChart = ({data:{confirmed,recovered,deaths},country}) => {
+  const [dailyData,setDailyData] = useState( [] );
+
+  useEffect( () => {
+           const fetchAPI = async () => {
+            setDailyData(await fetchDailyData());
+          }
+          
+          fetchAPI();
+         
+  },[])
+  // console.log(country)
   
     if(!confirmed){
         return 'Loading'
     }
-    console.log(country)
+    // console.log(country)
     const state = {
           labels: ['Confirmed', 'Recovered', 'Death',
                    ],
@@ -75,46 +86,14 @@ const PiChart = ({data:{confirmed,recovered,deaths},country}) =>{
             
             /> ) : null
           ) 
-
-
-      //     confirmed
-      //     ? (
-      //       <Bar
-            
-      //       data ={{
-      //         labels:['Infected','Recovered','Deaths'],
-      //         datasets:[{
-      //           label:'People',
-      //           backgroundColor:[
-      //             'rgba(0,0,255,0.5)',
-      //             'rgba(0,255,0,0.5)',
-      //             'rgba(255,0,0,0.5)',
-      //           ],
-      //           data:[confirmed.value,recovered.value,deaths.value]
-
-      //         }]
-
-      //       }}
-      //       options={{
-      //         legend:{display:false},
-      //         title: {display:true, text:`Current state in ${country}`}
-
-      //       }}
-
-            
-      //       />
-      //     )
-      //     : null
-      //  )
-
-          
-
         
     return (
       <div className={styles.container}>
-        <div >
+     
+        <div  className={styles.piChartId} >
+      
         <Pie
-        className={styles.piChartId}
+       
           data={state}
           options={{
             title:{
@@ -128,8 +107,22 @@ const PiChart = ({data:{confirmed,recovered,deaths},country}) =>{
           }}
         />
         </div>
+        
         <div className={styles.barChartCase}>{barChart}</div>
       </div>
     );
   }
 export default PiChart;
+
+
+
+
+
+
+
+
+
+
+
+
+

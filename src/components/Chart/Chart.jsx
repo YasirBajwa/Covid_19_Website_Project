@@ -12,10 +12,11 @@ const Chart = ({data:{confirmed,recovered,deaths},country}) => {
              const fetchAPI = async () => {
               setDailyData(await fetchDailyData());
             }
-
+            
             fetchAPI();
-          
+           
     },[])
+    // console.log(country)
 
     const lineChart = (
         dailyData[0] ? (
@@ -41,7 +42,7 @@ const Chart = ({data:{confirmed,recovered,deaths},country}) => {
       );
 
 
-
+      // console.log(country)
         const barChart =(
            confirmed
            ? (
