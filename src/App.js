@@ -37,7 +37,7 @@ class App extends React.Component {
           <Chart data={data} country={country} />
         </div>
         <div className={styles.footer}>
-          <h2>Made By Yasir Bajwa From Faisalabad</h2>
+          <h2>Made By Yasir Bajwa From Faisalabad Batch 4 BCC Quarter 1 Student</h2>
         </div>
       </div>
     );
