@@ -32,3 +32,23 @@ body{
 .footer > h2{
     padding-top: 5px !important;
 }
+@media(max-width:770px){
+    .footer >h2{
+        font-size: 18px;
+    padding-top: 20px !important;
+
+    }
+    .footer{
+        height: 60px;
+    }
+}
+@media(max-width:500px){
+    .footer >h2{
+        font-size: 15px;
+    /* padding-top: 20px !important; */
+
+    }
+    .footer{
+       margin-left: 25px;
+    }
+}

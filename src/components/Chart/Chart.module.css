@@ -18,10 +18,15 @@
         height: 100%;
         /* height: 400px !important; */
     }
+    .lineChartGraph{
+        width: 100%;
+        /* height: 500px; */
+    }
 }
-@media(max-width:470px){
-    /* .lineChartGraph {
-        width: 100% !important;
-        height: 500px !important;
-    } */
-}
+/* @media(max-width:600px){
+    .lineChartGraph{
+      height: 500em !important;
+        /* height: 500px; */
+    /* }
+
+}  */
