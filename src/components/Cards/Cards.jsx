@@ -104,7 +104,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
             </Typography>
 
             <Typography variant='body2'>
-              Number of <b>average death cases</b> due to COVID 19
+              Number of <b> death cases</b> due to COVID 19
             </Typography>
           </CardContent>
         </Grid>
