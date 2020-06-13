@@ -1,57 +1,37 @@
-.container{
-   
-    display: flex;
-    flex-direction: row;
-    width: 80% !important;
-    justify-content: center;
-    flex-wrap: wrap;
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 80% !important;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.barChartCase{
-    width: 500px !important;
-}
-
-.piChartId{
-    width: 500px !important;
-    margin-top: 20px ;
+.barChartCase {
+  width: 500px !important;
 }
 
-@media(max-width:600px){
-     .barChartCase{
-        /* width: 500px !important; */
-        /* height: 200px !important; */
-    
-    }
-    /*
-    .piChartId{
-        width: 100% !important;
-        height: 300px !important;
-    } */
-    .piChartId{
-        margin-left: 10px;
-      }
+.piChartId {
+  width: 500px !important;
+  margin-top: 20px;
 }
-@media(max-width:500px){
-    
-    .piChartId{
-      margin-left: 60px;
-    }
-    .barChartCase{
-       /* margin-left: 10px; */
-    }
-} 
-@media(max-width:420px){
-    .barChartCase{
-        /* margin-left: 100px; */
-    }
+
+@media (max-width: 600px) {
+  .piChartId {
+    margin-left: 10px;
+  }
 }
-@media(max-width:400px){
-    
-    .piChartId{
-      margin-left:40px;
-    }
-} 
-@media(max-width:350px){
-    .barChartCase{
-        margin-left: 30px;
-    }
+@media (max-width: 500px) {
+  .piChartId {
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 400px) {
+  .piChartId {
+    margin-left: 40px;
+  }
+}
+@media (max-width: 350px) {
+  .barChartCase {
+    margin-left: 30px;
+  }
 }
