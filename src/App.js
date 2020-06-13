@@ -3,7 +3,7 @@ import { Cards, Chart, CountryPicker } from './components/index';
 import PiChart from './components/Pichart/Pichart';
 import styles from './App.module.css';
 import { fetchData } from './api';
-import covidImg from './images/covid1.jpg';
+import covidImg from './images/covid1.png';
 
 class App extends React.Component {
   // we are using await because we are dealing with asynchronus data and await need to wrap in a function asynchrounus function
