@@ -1,3 +1,13 @@
+<h1>COVID_19 Tracker APP</h1> <br>
+<p> This is Bootcamp 2020 second Project to make a covid-19 app by using these : <br>
+ <ul>
+   <li>React</li>
+   <li>ChartJs</li>
+   <li>Material UI</li>
+   <li>APIS</li>
+   </ul>
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
