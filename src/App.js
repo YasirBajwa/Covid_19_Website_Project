@@ -5,7 +5,7 @@ import PiChart from './components/Pichart/Pichart'
 import styles from './App.module.css';
 import {fetchData} from './api';
 
-import covidImg from './images/covid.png';
+import covidImg from './images/covid19.jpg';
 
 // import {LastUpdateCase} from  './components/Cards/Cards';
  
@@ -40,6 +40,7 @@ state={
                 <CountryPicker handleCountryChange={this.handleCountryChange}/>
                 
                 <Cards data={data} />
+                <div><h1>Visual Representation of data using Different Graphs</h1></div>
                 <PiChart  data={data} country={country}/>
                 <Chart data={data} country={country} />
                

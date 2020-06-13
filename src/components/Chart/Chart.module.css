@@ -6,3 +6,16 @@
     width: 65%;
     margin-top: 7% !important;
 }
+@media(max-width:600px){
+    .container{
+        width: 100% !important;
+        height: 100%;
+        /* height: 400px !important; */
+    }
+}
+@media(max-width:470px){
+    .lineChartGraph {
+        width: 100% !important;
+        height: 500px !important;
+    }
+}

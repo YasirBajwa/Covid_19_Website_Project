@@ -15,30 +15,42 @@
     margin-top: 20px ;
 }
 @media(max-width:600px){
-    /* .barChartCase{
-        width: 100% !important;
-        height: 300px !important;
+     .barChartCase{
+        /* width: 500px !important; */
+        /* height: 200px !important; */
+    
     }
+    /*
     .piChartId{
         width: 100% !important;
         height: 300px !important;
     } */
     .piChartId{
-        margin-left: 140px;
+        margin-left: 10px;
       }
 }
 @media(max-width:500px){
     
     .piChartId{
-      margin-left: 130px;
+      margin-left: 60px;
     }
     .barChartCase{
-        /* width:500em !important; */
+       /* margin-left: 10px; */
     }
 } 
+@media(max-width:420px){
+    .barChartCase{
+        /* margin-left: 100px; */
+    }
+}
 @media(max-width:400px){
     
     .piChartId{
-      margin-left: 70px;
+      margin-left:40px;
     }
 } 
+@media(max-width:350px){
+    .barChartCase{
+        margin-left: 30px;
+    }
+}

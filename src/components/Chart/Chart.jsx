@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import {fetchDailyData} from '../../api';
-import {Line,Bar,Pie} from 'react-chartjs-2';
+import {Line,Bar} from 'react-chartjs-2';
 
 import styles from './Chart.module.css';
 
@@ -21,6 +21,7 @@ const Chart = ({data:{confirmed,recovered,deaths},country}) => {
     const lineChart = (
         dailyData[0] ? (
           <Line
+            className={styles.lineChartGraph}
             data={{
               labels: dailyData.map(({ date }) => date),
               datasets: [{

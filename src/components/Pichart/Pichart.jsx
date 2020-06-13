@@ -3,21 +3,21 @@
 import React,{useState,useEffect} from 'react';
 import {Pie, Bar} from 'react-chartjs-2';
 import styles from './Pichart.module.css'
-import {fetchDailyData} from '../../api';
+// import {fetchDailyData} from '../../api';
 
 
 
 const PiChart = ({data:{confirmed,recovered,deaths},country}) => {
-  const [dailyData,setDailyData] = useState( [] );
+  // const [dailyData,setDailyData] = useState( [] );
 
-  useEffect( () => {
-           const fetchAPI = async () => {
-            setDailyData(await fetchDailyData());
-          }
+  // useEffect( () => {
+  //          const fetchAPI = async () => {
+  //           setDailyData(await fetchDailyData());
+  //         }
           
-          fetchAPI();
+  //         fetchAPI();
          
-  },[])
+  // },[])
   // console.log(country)
   
     if(!confirmed){
@@ -65,7 +65,7 @@ const PiChart = ({data:{confirmed,recovered,deaths},country}) => {
             <Bar
             
             data ={{
-              labels:['Recovery Rate','Death  Rate'],
+              labels:['Recovery Rate %','Death Rate %'],
                 datasets:[{
                 label:'Average',
                 backgroundColor:[
