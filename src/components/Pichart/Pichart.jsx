@@ -1,6 +1,6 @@
 
 
-import React,{useState,useEffect} from 'react';
+import React from 'react';
 import {Pie, Bar} from 'react-chartjs-2';
 import styles from './Pichart.module.css'
 // import {fetchDailyData} from '../../api';
@@ -8,22 +8,12 @@ import styles from './Pichart.module.css'
 
 
 const PiChart = ({data:{confirmed,recovered,deaths},country}) => {
-  // const [dailyData,setDailyData] = useState( [] );
-
-  // useEffect( () => {
-  //          const fetchAPI = async () => {
-  //           setDailyData(await fetchDailyData());
-  //         }
-          
-  //         fetchAPI();
-         
-  // },[])
-  // console.log(country)
+ 
   
     if(!confirmed){
         return 'Loading'
     }
-    // console.log(country)
+   
     const state = {
           labels: ['Confirmed', 'Recovered', 'Death',
                    ],
@@ -79,7 +69,7 @@ const PiChart = ({data:{confirmed,recovered,deaths},country}) => {
             }}
             options={{
               legend:{display:false},
-              title: {display:true, text:`Current state in ${country}`}
+              title: {display:true, text:`Current state is ${country}`}
 
             }}
 

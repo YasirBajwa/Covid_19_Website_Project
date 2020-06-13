@@ -9,8 +9,7 @@ body{
 }
 
 .covid{
-     width:40%;
-     height: 300px;
+     width:550px;
     margin-top:40px;
 }
 
@@ -21,4 +20,15 @@ body{
 .covid{
     width:100%;
 }
+}
+
+.footer{
+    margin-top: 15px;
+    width: 100%;
+    height: 45px;
+    background-image: linear-gradient( 109.6deg,  rgba(102,203,149,1) 11.2%, rgba(39,210,175,1) 98.7% );
+    text-align: center;
+}
+.footer > h2{
+    padding-top: 5px !important;
 }

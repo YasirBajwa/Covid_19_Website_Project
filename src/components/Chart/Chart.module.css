@@ -6,6 +6,12 @@
     width: 65%;
     margin-top: 7% !important;
 }
+@media(max-width:770px){
+    .container{
+        width: 100%;
+        
+    }
+}
 @media(max-width:600px){
     .container{
         width: 100% !important;
@@ -14,8 +20,8 @@
     }
 }
 @media(max-width:470px){
-    .lineChartGraph {
+    /* .lineChartGraph {
         width: 100% !important;
         height: 500px !important;
-    }
+    } */
 }

@@ -5,7 +5,7 @@ import PiChart from './components/Pichart/Pichart'
 import styles from './App.module.css';
 import {fetchData} from './api';
 
-import covidImg from './images/covid19.jpg';
+import covidImg from './images/covid.png';
 
 // import {LastUpdateCase} from  './components/Cards/Cards';
  
@@ -34,6 +34,7 @@ state={
 
         const {data,country} = this.state;
         return(
+               <div>
                <div className={styles.container}>
                 <img className={styles.covid} src={covidImg} alt={'Covid-19'}/>
                
@@ -44,6 +45,10 @@ state={
                 <PiChart  data={data} country={country}/>
                 <Chart data={data} country={country} />
                
+            </div>
+            <div className={styles.footer}>
+                <h2>Made By Yasir Bajwa From Faisalabad</h2>
+            </div>
             </div>
         )
     }
