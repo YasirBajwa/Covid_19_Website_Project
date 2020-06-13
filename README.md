@@ -7,8 +7,7 @@
    <li>APIS</li>
    </ul>
    
-   <p>Check the website on the below link</p>
-   <h3>bootcamp2020_ninja_covid19_tracker.surge.sh</h3>
+   <p>Check the website on the  this link bootcamp2020_ninja_covid19_tracker.surge.sh</p>
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
