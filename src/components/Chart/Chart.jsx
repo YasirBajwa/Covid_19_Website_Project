@@ -22,7 +22,7 @@ const Chart = ({data:{confirmed,recovered,deaths},country}) => {
         dailyData[0] ? (
           <Line
             className={styles.lineChartGraph}
-            data={{
+              data={{
               labels: dailyData.map(({ date }) => date),
               datasets: [{
                 data: dailyData.map((data) => data.confirmed),

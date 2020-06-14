@@ -42,7 +42,11 @@ const PiChart = ({ data: { confirmed, recovered, deaths }, country }) => {
       }}
       options={{
         legend: { display: false },
-        title: { display: true, text: `Current state is ${country}` },
+        title: { display: true,
+           text: `Current state is..... ${ !country ? 'Global' : country}`,
+          fontSize: 17,
+          // color: 'rgb(128,0,10)'
+        },
       }}
     />
   ) : null;
